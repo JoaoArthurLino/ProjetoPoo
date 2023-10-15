@@ -6,10 +6,12 @@ public class Tank extends Character implements ActionsCharacter {
      *   Vida: 200
      */
 
-
-    @Override
-    public void nameCharacter() {
-
+    public Tank(String name){
+        super(name);
+        setArmor(25);
+        setHealth(200);
+        setAttackDamage(10);
+        setMissChance(0);
     }
 
     @Override
@@ -35,5 +37,13 @@ public class Tank extends Character implements ActionsCharacter {
     @Override
     public void startFight() {
 
+    }
+
+    @Override
+    public void showStatus() {
+        System.out.println("Personagem: " + getName());
+        System.out.println("Vida: " + getHealth());
+        System.out.println("Armadura " + getArmor());
+        System.out.println("Dano de ataque: " + getAttackDamage());
     }
 }

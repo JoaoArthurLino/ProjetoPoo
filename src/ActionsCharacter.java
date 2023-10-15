@@ -1,8 +1,11 @@
 public interface ActionsCharacter {
-    public void nameCharacter();
-    public void Attack();
-    public void defend();
-    public void heal();
-    public void abandonFight();
-    public void startFight();
+
+    /* Não precisa especificar que os métodos são public porque seria redundante.*/
+
+    void Attack();
+    void defend();
+    void heal();
+    void abandonFight();
+    void startFight();
+    void showStatus();
 }

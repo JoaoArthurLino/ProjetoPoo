@@ -7,9 +7,12 @@ public class Archer extends Character implements ActionsCharacter{
      *   Chance de errar o disparo: 10%
      */
 
-    @Override
-    public void nameCharacter() {
-
+    public Archer(String name){
+        super(name);
+        setArmor(15);
+        setHealth(150);
+        setAttackDamage(8);
+        setMissChance(0);
     }
 
     @Override
@@ -35,6 +38,15 @@ public class Archer extends Character implements ActionsCharacter{
     @Override
     public void startFight() {
 
+    }
+
+    @Override
+    public void showStatus() {
+        System.out.println("Personagem: " + getName());
+        System.out.println("Vida: " + getHealth());
+        System.out.println("Armadura " + getArmor());
+        System.out.println("Dano de ataque: " + getAttackDamage());
+        System.out.println("Chance de errar o disparo: " + getMissChance());
     }
 }
 
