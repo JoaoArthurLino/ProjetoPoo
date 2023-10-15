@@ -1,1 +1,13 @@
-Teste
+Feito até agora: 
+
+[X] Criação do repositório
+[X] Implementação da superclasse e das subclasses
+[X] Implementação de um construtor apropriado para cada subclasse
+[X] Definição dos atributos para cada subclasse
+[X] Implementação do método showStatus()
+
+Próximos passos:
+
+[] Implementar as subclasses dos inimigos
+[] Definir atributos dos inimigos
+[] Trabalhar nos métodos de luta (iniciar luta e abandonar luta)
